@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "29910165-175a-4dc5-89e5-f49fd0c7c3d6",
+		"name": "TQI-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Todos Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Caio\",\n    \"rg\": \"MG-15.936.284\",\n    \"cpf\": \"091.946.376-28\",\n    \"endereco\": \"Rua das Goibas 120\",\n    \"renda\": 7.00,\n    \"email\": \"caio@teste.com\",\n    \"senha\": \"12345678910\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Solicitação Empréstimo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"valor\": 2000.00,\n    \"dataPrimeiraParcela\": \"25-01-2022\",\n    \"numParcelas\": 60\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/cliente/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Empréstimos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/emprestimo/1?email=caio%40teste.com&senha=testando123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"emprestimo",
+						"1"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "caio%40teste.com"
+						},
+						{
+							"key": "senha",
+							"value": "testando123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Emprestimo Detalhado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/emprestimo/1/1?email=caio%40teste.com&senha=testando123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"emprestimo",
+						"1",
+						"1"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "caio%40teste.com"
+						},
+						{
+							"key": "senha",
+							"value": "testando123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

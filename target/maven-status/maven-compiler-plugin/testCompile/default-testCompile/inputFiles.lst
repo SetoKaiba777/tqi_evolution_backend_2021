@@ -1,0 +1,9 @@
+/home/seto/Documents/Bootcamp/teste-tqi/src/test/java/com/kaibacorp/testetqi/TesteTqiApplicationTests.java
+/home/seto/Documents/Bootcamp/teste-tqi/src/test/java/com/kaibacorp/testetqi/builder/LoginDTOBuilder.java
+/home/seto/Documents/Bootcamp/teste-tqi/src/test/java/com/kaibacorp/testetqi/builder/EmprestimoDetalhadoBuilder.java
+/home/seto/Documents/Bootcamp/teste-tqi/src/test/java/utils/JsonConvertionUtils.java
+/home/seto/Documents/Bootcamp/teste-tqi/src/test/java/com/kaibacorp/testetqi/builder/InputClienteDTOBuilder.java
+/home/seto/Documents/Bootcamp/teste-tqi/src/test/java/com/kaibacorp/testetqi/controller/EmprestimoControllerTest.java
+/home/seto/Documents/Bootcamp/teste-tqi/src/test/java/com/kaibacorp/testetqi/service/ClienteServiceTest.java
+/home/seto/Documents/Bootcamp/teste-tqi/src/test/java/com/kaibacorp/testetqi/controller/ClienteControllerTest.java
+/home/seto/Documents/Bootcamp/teste-tqi/src/test/java/com/kaibacorp/testetqi/builder/InputEmprestimoDTOBuilder.java
